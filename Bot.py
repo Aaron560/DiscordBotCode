@@ -5,7 +5,6 @@ load_dotenv('.env')
 
 client = discord.Client()
 RainbowSixQ = []
-#embed = discord.Embed(description = ("") color = discord.color.blue)
 
 @client.event
 async def on_ready():
@@ -17,7 +16,7 @@ async def on_message(message):
         return
 
     if message.content.startswith('$join'):
-        await message.channel.send('Hello!'+ " " + str(message.author.display_name) + " " + "you have joined SpookyWagons's RainbowSixQ you are {}")
+        await message.channel.send('Hello!'+ " " + str(message.author.display_name) + " " + "you have joined 'InsertUsersnameHere' RainbowSixQ you are {}")
         RainbowSixQ.append(str(message.author.display_name))
         print(RainbowSixQ)
     
